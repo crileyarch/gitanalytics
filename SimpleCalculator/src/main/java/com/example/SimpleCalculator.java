@@ -16,7 +16,7 @@ public class SimpleCalculator {
         String firstVal = args[0];
         String secondVal = args[1];
 
-        if (debug = true) {
+        if (debug) {
             logger.log(Level.FINEST, "Adding : " + addNumbers(firstVal, secondVal));
             logger.log(Level.FINEST, "Subtracting : " + subtractNumbers(firstVal, secondVal));
             logger.log(Level.FINEST, "Multiplying : " + multiplyNumbers(firstVal, secondVal));

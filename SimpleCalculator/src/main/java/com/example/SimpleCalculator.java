@@ -1,6 +1,7 @@
 package com.example;
 
 
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class SimpleCalculator {
@@ -14,10 +15,10 @@ public class SimpleCalculator {
         String firstVal = args[0];
         String secondVal = args[1];
 
-        logger.info("Adding : " + firstVal + " +  " +  secondVal + " = " + (addNumbers(firstVal, secondVal)));
-        logger.info("Subtracting : " + firstVal + " -  " +  secondVal + " = " + (subtractNumbers(firstVal, secondVal)));
-        logger.info("Multiplying : " + firstVal + " *  " +  secondVal + " = " + (multiplyNumbers(firstVal, secondVal)));
-        logger.info("Dividing : " + firstVal + " /  " +  secondVal + " = " + (divideNumbers(firstVal, secondVal)));
+        logger.log(Level.SEVERE, "Adding : " + firstVal + " +  " +  secondVal + " = " + (addNumbers(firstVal, secondVal)));
+        logger.log(Level.SEVERE,"Subtracting : " + firstVal + " -  " +  secondVal + " = " + (subtractNumbers(firstVal, secondVal)));
+        logger.log(Level.SEVERE,"Multiplying : " + firstVal + " *  " +  secondVal + " = " + (multiplyNumbers(firstVal, secondVal)));
+        logger.log(Level.SEVERE,"Dividing : " + firstVal + " /  " +  secondVal + " = " + (divideNumbers(firstVal, secondVal)));
 
 
 

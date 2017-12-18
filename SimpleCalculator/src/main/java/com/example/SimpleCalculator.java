@@ -1,16 +1,23 @@
 package com.example;
 
+
+import java.util.logging.Logger;
+
 public class SimpleCalculator {
 
+    private static final Logger logger = Logger.getLogger(SimpleCalculator.class.getName());
+
     public static void main(String[] args){
+
+
 
         String firstVal = args[0];
         String secondVal = args[1];
 
-        System.err.println("Adding : " + firstVal + " +  " +  secondVal + " = " + (addNumbers(firstVal, secondVal)));
-        System.err.println("Subtracting : " + firstVal + " -  " +  secondVal + " = " + (subtractNumbers(firstVal, secondVal)));
-        System.err.println("Multiplying : " + firstVal + " *  " +  secondVal + " = " + (multiplyNumbers(firstVal, secondVal)));
-        System.err.println("Dividing : " + firstVal + " /  " +  secondVal + " = " + (divideNumbers(firstVal, secondVal)));
+        logger.info("Adding : " + firstVal + " +  " +  secondVal + " = " + (addNumbers(firstVal, secondVal)));
+        logger.info("Subtracting : " + firstVal + " -  " +  secondVal + " = " + (subtractNumbers(firstVal, secondVal)));
+        logger.info("Multiplying : " + firstVal + " *  " +  secondVal + " = " + (multiplyNumbers(firstVal, secondVal)));
+        logger.info("Dividing : " + firstVal + " /  " +  secondVal + " = " + (divideNumbers(firstVal, secondVal)));
 
 
 

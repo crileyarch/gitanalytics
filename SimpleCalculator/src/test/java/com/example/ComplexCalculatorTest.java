@@ -10,10 +10,10 @@ public class ComplexCalculatorTest {
     public void testNumbers(){
 
         SimpleCalculator complex = new SimpleCalculator();
-        assertEquals(3,complex.addNumbers("100092912","292991092"));
-        assertEquals(3,complex.subtractNumbers("100092912","292991092"));
-        assertEquals(3,complex.multiplyNumbers("100092912","292991092"));
-        assertEquals(3,complex.divideNumbers("100092912","292991092"));
+        assertEquals(333333,complex.addNumbers("111111","222222"));
+        assertEquals(-111111,complex.subtractNumbers("111111","222222"));
+        assertEquals(24642,complex.multiplyNumbers("111","222"));
+        assertEquals(100000,complex.divideNumbers("100000","1"));
 
     }
 

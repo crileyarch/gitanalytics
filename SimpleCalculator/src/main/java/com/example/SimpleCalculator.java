@@ -17,10 +17,10 @@ public class SimpleCalculator {
         String secondVal = args[1];
 
         if (debug) {
-            logger.log(Level.FINEST, "Adding : " + addNumbers(firstVal, secondVal));
-            logger.log(Level.FINEST, "Subtracting : " + subtractNumbers(firstVal, secondVal));
-            logger.log(Level.FINEST, "Multiplying : " + multiplyNumbers(firstVal, secondVal));
-            logger.log(Level.FINEST, "Dividing : " + divideNumbers(firstVal, secondVal));
+            logger.log(Level.FINEST, "Adding : {0}",addNumbers(firstVal, secondVal));
+            logger.log(Level.FINEST, "Subtracting : {0}",subtractNumbers(firstVal, secondVal));
+            logger.log(Level.FINEST, "Multiplying : {0}",multiplyNumbers(firstVal, secondVal));
+            logger.log(Level.FINEST, "Dividing : {0}",divideNumbers(firstVal, secondVal));
         }
 
 
